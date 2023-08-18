@@ -26,6 +26,7 @@ submitButton.addEventListener("click",function(){
     }
     if(name === "" || email === "" || mobile=== "" || resume_link==="" || gender===""){
         alert("Enter Correct Values");
+        return;
     }
     let text = "";
     if(c1.checked === true){

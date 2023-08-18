@@ -26,6 +26,17 @@ submitButton.addEventListener("click",function(){
     }
     if(name === "" || email === "" || mobile=== "" || resume_link==="" || gender===""){
         alert("Enter Correct Values");
+        nameFeild.value = "";
+        emailFeild.value = "";
+        mobileFeild.value = "";
+        resumeFeild.value = "";
+
+        c1.checked = false;
+        c2.checked = false;
+        c3.checked = false;
+        for(i=0;i<radio.length;i++){
+            radio[i].checked = false;
+        }
         return;
     }
     let text = "";

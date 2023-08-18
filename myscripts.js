@@ -46,9 +46,9 @@ submitButton.addEventListener("click",function(){
     mobileFeild.value = "";
     resumeFeild.value = "";
     radio.value = "";
-    c1.value = false;
-    c2.value = false;
-    c3.value = false;
+    c1.checked = false;
+    c2.checked = false;
+    c3.checked = false;
     for(i=0;i<radio.length;i++){
         radio[i].checked = false;
     }

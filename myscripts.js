@@ -24,6 +24,9 @@ submitButton.addEventListener("click",function(){
             gender = radio[i].value;
         }
     }
+    if(name === "" || email === "" || mobile=== "" || resume_link==="" || gender===""){
+        alert("Enter Correct Values");
+    }
     let text = "";
     if(c1.checked === true){
         text = text + c1.value + ",";
@@ -43,7 +46,10 @@ submitButton.addEventListener("click",function(){
     mobileFeild.value = "";
     resumeFeild.value = "";
     radio.value = "";
-    c1.value = "";
-    c2.value = "";
-    c3.value = "";
+    c1.value = false;
+    c2.value = false;
+    c3.value = false;
+    for(i=0;i<radio.length;i++){
+        radio[i].checked = false;
+    }
 });

@@ -1,2 +1,2 @@
-# LGMVIP-Web-Task-3
+# Basic-Enrollment-Form
 Repository for Enrollment Form
